@@ -5,232 +5,231 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Tom Maslen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<style type="text/css">
-* {
-	box-sizing: border-box
-}
-body {
-	font-family: sans-serif;
-	font-weight: 300;
-	margin: 0;
-}
-a {
-	color: #00aeef;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-.header {
-	height: 100%;
-}
-@media (min-width: 600px) {
+	<style type="text/css">
+	* {
+		box-sizing: border-box
+	}
+	body {
+		font-family: sans-serif;
+		font-weight: 300;
+		margin: 0;
+	}
+	a {
+		color: #00aeef;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
 	.header {
+		height: 100%;
+	}
+	@media (min-width: 600px) {
+		.header {
+			height: 50%;
+			margin-bottom: 1em;
+			min-height: 450px;
+		}
+	}
+	.header__graphic {
+		background: #00aeef fixed;
 		height: 50%;
-		margin-bottom: 1em;
-		min-height: 450px;
+		padding-left: 50%;
+		position: relative;
 	}
-}
-.header__graphic {
-	background: #00aeef fixed;
-	height: 50%;
-	padding-left: 50%;
-	position: relative;
-}
-.header__profile {
-	background: url(profile.jpg) black center center;
-	background-size: contain;
-	border: 0.75em solid white;
-	border-radius: 6em;
-	bottom: 0;
-	color: white;
-	height: 10em;
-	margin: 0 auto -5em -5em;
-	padding-top: 0.65em;
-	position: absolute;
-	width: 10em;
-}
-h1 {
-	font-size: 3em;
-	font-weight: 300;
-	margin: 2em 0 0;
-	text-align: center;
-}
-.header__strapline {
-	margin-bottom: 1.5em;
-	text-align: center;
-}
+	.header__profile {
+		background: url(profile.jpg) black center center;
+		background-size: contain;
+		border: 0.75em solid white;
+		border-radius: 6em;
+		bottom: 0;
+		color: white;
+		height: 10em;
+		margin: 0 auto -5em -5em;
+		padding-top: 0.65em;
+		position: absolute;
+		width: 10em;
+	}
+	h1 {
+		font-size: 3em;
+		font-weight: 300;
+		margin: 2em 0 0;
+		text-align: center;
+	}
+	.header__strapline {
+		margin-bottom: 1.5em;
+		text-align: center;
+	}
 
-h2 {
-	color: #ef0000;
-	color: rgba(239, 0, 0, 0.6);
-	font-family: monospace;
-	font-size: 1.5em;
-	font-weight: 100;
-	margin: 0 0 0.5;
-	text-transform: uppercase;
-}
-h3 {
-	font-size: 1.25em;
-	font-weight: 400;
-	letter-spacing: -1px;
-	margin: 0 0 -0.5em;
-}
-h4 {
-	font-size: 1em;
-	font-weight: 500;
-	margin: 0 0 -1em;
-}
+	h2 {
+		color: #ef0000;
+		color: rgba(239, 0, 0, 0.6);
+		font-family: monospace;
+		font-size: 1.5em;
+		font-weight: 100;
+		margin: 0 0 0.5;
+		text-transform: uppercase;
+	}
+	h3 {
+		font-size: 1.25em;
+		font-weight: 400;
+		letter-spacing: -1px;
+		margin: 0 0 -0.5em;
+	}
+	h4 {
+		font-size: 1em;
+		font-weight: 500;
+		margin: 0 0 -1em;
+	}
 
-.layout {
-	line-height: 1.5;
-	margin: 0 auto;
-	overflow: hidden;
-	width: 90%;
-}
-
-.layout__aside {
-	margin: 0 0 2em;
-}
-
-.layout__aside p {
-	margin-top: 0;
-}
-
-@media (min-width: 450px) {
 	.layout {
-		width: 420px;
-	}
-}
-@media (min-width: 940px) {
-	.layout {
-		width: 900px;
-	}
-	.layout__elm {
-		width: 45%;
+		line-height: 1.5;
+		margin: 0 auto;
+		overflow: hidden;
+		width: 90%;
 	}
 
 	.layout__aside {
-		float: right;
-		width: 45%;
+		margin: 0 0 2em;
 	}
-}
 
-.talks-articles-stuff {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.talks-articles-stuff li {
-	margin-bottom: 1em;
-}
-.talks-articles-stuff .talks-articles-stuff__title {
-	display: block;
-	font-weight: 500;
-}
-
-.contact {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.contact__item {
-	background: grey;
-	display: inline-block;
-	height: 1.5em;
-	margin: 0 0.5em 0 0;
-	width: 1.5em;
-}
-
-.contact__link {
-	display: block;
-	height: 100%;
-}
-
-.contact__text {
-	position: absolute;
-	left: -9999em;
-}
-
-.contact__item--twitter {
-	background: url(icon-twitter.svg);
-}
-.contact__item--github {
-	background: url(icon-github.svg);
-}
-.contact__item--email {
-	background: url(icon-email.svg);
-}
-.contact__item--facebook {
-	background: url(icon-facebook.svg);
-}
-
-.panel {
-	display: none;
-	padding: 1em;
-}
-
-.panel__close-button {
-	color: #00aeef;
-	cursor: pointer;
-	font-size: 1.75em;
-	position: absolute;
-	right: 6px;
-	top: 2px;
-	z-index: 20;
-}
-
-.panel h3 {
-	margin-right: 0.5em;
-}
-
-@media (max-width: 414px) {
-	.job {
-		padding-right: 1em;
-		position: relative;
+	.layout__aside p {
+		margin-top: 0;
 	}
-	.job:before {
-		color: #00aeef;
-		content: '>';
+
+	@media (min-width: 450px) {
+		.layout {
+			width: 420px;
+		}
+	}
+	@media (min-width: 940px) {
+		.layout {
+			width: 900px;
+		}
+		.layout__elm {
+			width: 45%;
+		}
+
+		.layout__aside {
+			float: right;
+			width: 45%;
+		}
+	}
+
+	.talks-articles-stuff {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.talks-articles-stuff li {
+		margin-bottom: 1em;
+	}
+	.talks-articles-stuff .talks-articles-stuff__title {
 		display: block;
-		position: absolute;
-		right: 0;
+		font-weight: 500;
 	}
-	.job__details {
+
+	.contact {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.contact__item {
+		background: grey;
+		display: inline-block;
+		height: 1.5em;
+		margin: 0 0.5em 0 0;
+		width: 1.5em;
+	}
+
+	.contact__link {
+		display: block;
+		height: 100%;
+	}
+
+	.contact__text {
+		position: absolute;
+		left: -9999em;
+	}
+
+	.contact__item--twitter {
+		background: url(icon-twitter.svg);
+	}
+	.contact__item--github {
+		background: url(icon-github.svg);
+	}
+	.contact__item--email {
+		background: url(icon-email.svg);
+	}
+	.contact__item--facebook {
+		background: url(icon-facebook.svg);
+	}
+
+	.panel {
 		display: none;
+		padding: 1em;
 	}
 
-	.mode--panel .panel {
-		background: white;
-		bottom: 0;
-		display: block;
-		left: 0;
-		overflow: scroll;
+	.panel__close-button {
+		color: #00aeef;
+		cursor: pointer;
+		font-size: 1.75em;
 		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: 10;
+		right: 6px;
+		top: 2px;
+		z-index: 20;
 	}
-	.panel .job__details {
-		display: block;
-	}
-	.mode--panel .layout,
-	.mode--panel .header {
-		position: absolute;
-		height: 1px;
-	}
-}
 
-.footer {
-	background: #00aeef fixed;
-	clear: both;
-	height: 4em;
-	margin-top: 4em;
-}
-</style>
+	.panel h3 {
+		margin-right: 0.5em;
+	}
 
+	@media (max-width: 414px) {
+		.job {
+			padding-right: 1em;
+			position: relative;
+		}
+		.job:before {
+			color: #00aeef;
+			content: '>';
+			display: block;
+			position: absolute;
+			right: 0;
+		}
+		.job__details {
+			display: none;
+		}
+
+		.mode--panel .panel {
+			background: white;
+			bottom: 0;
+			display: block;
+			left: 0;
+			overflow: scroll;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 10;
+		}
+		.panel .job__details {
+			display: block;
+		}
+		.mode--panel .layout,
+		.mode--panel .header {
+			position: absolute;
+			height: 1px;
+		}
+	}
+
+	.footer {
+		background: #00aeef fixed;
+		clear: both;
+		height: 4em;
+		margin-top: 4em;
+	}
+	</style>
+</head>
 <body>
 
 <div class="panel">
@@ -285,6 +284,10 @@ Velocity Conf, London, 2013<br />
 
 	<h2>Side Projects</h2>
 
+	<h3><a href="http://tweetgest.com/frontend-top-100">tweetgest.com</a></h3>
+
+	<p>A website and newsletter that makes it easier to keep up with the frontend dev community on Twitter.  Using NodeJS running on AWS, it currently keeps watch on a list of the top 100 frontend developers and sends you an email of the most interesting links.</p> 
+
 	<h3><a href="http://javascripular.com">javascripular.com</a></h3>
 
 	<p>A JavaScript regex helper I built to help me to better understand and assist me when making writing regexs.  Its a JavaScript version of <a href="http://rubular.com">rubular.com</a>, a Ruby regex helper.</p>
@@ -307,12 +310,30 @@ Velocity Conf, London, 2013<br />
 		<li><a href="https://github.com/maslen/image-compare">Image compare</a> Node.js utility to help you quickly identify which image from an array closest resembles a target image.</li>
 		<li><a href="https://github.com/maslen/toggle.js">Toggle.js</a> A JS method for toggling between an array of values</li>
 		<li><a href="https://github.com/maslen/responsive-iframe">Responsive iFrame</a> Example webpage showing how an iframe can be responsive.</li>
+	</ul>
 
 </div>
 
 <div id="career" class="js-career">
 
 	<h2 class="layout__elm">Career</h2>
+
+	<div class="layout__elm job">
+		<h3>Dev Lead, BBC News</h3>
+		<p>October 2015 - present</p>
+		<div class="job__details">
+			<h4>Responsibilities</h4>
+			<p>Responsible for co-ordinating recruitment, best working practices and maintaining a large codebase between 5 development teams.  I've done this role alongside my Tech Lead responsibilities.  This includes:</p>
+			<ul>
+				<li>Improving the recruitment process for the entire department.</li>
+				<li>Setting up and running working groups to improve communication and working practices between teams.</li>
+				<li>Running monthly departmental meetings for developers.</li>
+				<li>Coordinating developer resource between teams.</li>
+				<li>Mentoring other tech leads.</li>
+				<li>Consulting News management on all technical concerns.</li>
+			</ul>
+		</div>
+	</div>
 
 	<div class="layout__elm job">
 		<h3>Tech Lead, BBC News Visual Journalism</h3>
